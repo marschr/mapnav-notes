@@ -38,17 +38,24 @@ https://github.com/marschr/comma2k19
 - As for routing, OSM does provide the number of lanes for a given path/way segment and some turn lane restrictions. Mapbox does provide turn lane restrictions and routing APIs. Will openpilot need multi-lane info to navigate on crowded highways (to feed the model/cereal desire inputs) or just "keep right/left" would be enough?
 
 #### Todo: 
-- Implement overpass + OSM data local server.
-- Query data from overpass + OSM.
+- [work in progress] Implement overpass + OSM data local server:
+    - Links
+        - https://wiki.openstreetmap.org/wiki/Setting_up_a_local_copy_of_the_OpenStreetMap_database,_kept_up_to_date_with_minutely_diffs
+        - http://overpass-api.de/
+        - http://overpass-api.de/no_frills.html
+        - http://overpass-api.de/full_installation.html
+        - https://github.com/drolbr/Overpass-API
+        - https://wiki.openstreetmap.org/wiki/Overpass_turbo
 - [work in progress] Prototype frontend with nav/routing controls on QT
 ![Alt](wip-frontend.png "wip-frontend")
-- Check Valhalla stuff:
-https://github.com/valhalla/valhalla
-https://wiki.openstreetmap.org/wiki/Valhalla
+- Cleanup local codebase and openpilot fork and push to github.
+- Check/implement Valhalla stuff:
+    - https://github.com/valhalla/valhalla
+    - https://wiki.openstreetmap.org/wiki/Valhalla
 
 
 ##### Other links/stuff:
-https://www.mapzen.com/
-https://github.com/mapzen/
-https://www.interline.io/osm/extracts/
-https://doc.qt.io/qt-5/location-plugin-mapboxgl.html
+- https://www.mapzen.com/
+- https://github.com/mapzen/
+- https://www.interline.io/osm/extracts/
+- https://doc.qt.io/qt-5/location-plugin-mapboxgl.html
