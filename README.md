@@ -2,7 +2,8 @@
 ### Notes and findings on maps/nav for openpilot
 
 #### Rendering:
-- Adreno 530 driver on current EON/C2 Android version doesn't support "EXT_external_objects_fd" OpenGL/Vulkan extensions used for IPC GL texture. Could fallback to some shared DMA/ION/SVM like vision does? (maybe benchmark both solutions to check if there are real perf gains) Or even draw directly from UI module? (related discord link: https://discordapp.com/channels/469524606043160576/534138605136773138/730596253720641556)
+- Adreno 530 driver on current EON/C2 Android version doesn't seem to support "EXT_external_objects_fd" OpenGL/Vulkan extensions used for IPC GL texture. Could fallback to some shared DMA/ION/SVM like vision does? (maybe benchmark both solutions to check if there are real perf gains) Or even draw directly from UI module? (related discord link: https://discordapp.com/channels/469524606043160576/534138605136773138/730596253720641556)
+(OP3 vulkan driver info https://vulkan.gpuinfo.org/displayreport.php?id=3603#extensions)
 [![mapnav-ipc](mapnav-ipc.jpg)](https://imgur.com/gallery/8pfHO5X)
 **(link on the image for video)**
 
@@ -35,10 +36,10 @@
 https://github.com/marschr/comma2k19
 ![Alt](mapbox_osm_overpass.png "openstreetmap nodes plotted onto mapboxgl plugin")
 
-- As for routing, OSM does provide the number of lanes for a given path/way segment and some turn lane restrictions. Mapbox does provide turn lane restrictions and routing APIs. Will openpilot need multi-lane info to navigate on crowded highways (to feed the model/cereal desire inputs) or just "keep right/left" would be enough?
+- As for routing, OSM does provide the number of lanes for a given path/way segment and some turn lane restrictions. Mapbox does provide turn lane restrictions and routing APIs. Will openpilot need multi-lane info to navigate on crowded highways (to feed the model/cereal desire inputs) or just "keep right/left" would be enough? Also, C2 GPS positioning with KF seems good enough to localize ego position within lanes.
 
 #### Todo: 
-- [work in progress] Implement overpass + OSM data local server:
+- **[work in progress]** Implement overpass + OSM data local server:
     - Links
         - https://wiki.openstreetmap.org/wiki/Setting_up_a_local_copy_of_the_OpenStreetMap_database,_kept_up_to_date_with_minutely_diffs
         - http://overpass-api.de/
@@ -46,9 +47,10 @@ https://github.com/marschr/comma2k19
         - http://overpass-api.de/full_installation.html
         - https://github.com/drolbr/Overpass-API
         - https://wiki.openstreetmap.org/wiki/Overpass_turbo
-- [work in progress] Prototype frontend with nav/routing controls on QT
+- **[work in progress]** Prototype frontend with nav/routing controls on QT
 ![Alt](wip-frontend.png "wip-frontend")
 - Cleanup local codebase and openpilot fork and push to github.
+- Hack comma connect to send routes to openpilot (should use athena?)
 - Check/implement Valhalla stuff:
     - https://github.com/valhalla/valhalla
     - https://wiki.openstreetmap.org/wiki/Valhalla
