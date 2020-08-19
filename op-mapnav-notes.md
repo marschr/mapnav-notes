@@ -2,11 +2,11 @@
 ### Notes and findings on maps/nav for openpilot
 
 #### Rendering:
-- Adreno 530 driver on current EON/C2 Android version doesn't support "EXT_external_objects_fd" OpenGL/Vulkan extensions used for IPC GL texture. Could fallback to some shared DMA/ION/SVM like vision does? (maybe benchmark both solutions to check if there are real perf gains) Or even draw directly from UI module? (Discord link: https://discordapp.com/channels/469524606043160576/534138605136773138/730596253720641556)
+- Adreno 530 driver on current EON/C2 Android version doesn't support "EXT_external_objects_fd" OpenGL/Vulkan extensions used for IPC GL texture. Could fallback to some shared DMA/ION/SVM like vision does? (maybe benchmark both solutions to check if there are real perf gains) Or even draw directly from UI module? (related discord link: https://discordapp.com/channels/469524606043160576/534138605136773138/730596253720641556)
 [![mapnav-ipc](mapnav-ipc.jpg)](https://imgur.com/gallery/8pfHO5X)
 **(link on the image for video)**
 
-- Current mapbox-gl-native breaks down when trying to pitch camera below 60 degrees. Also causes maptile requests runaway. Could fix with LODs. Need to investigate other implementations fixes (JS and iOS). This is mainly useful if nav would do AR projections over camera frames.  (Discord link: https://discordapp.com/channels/469524606043160576/534138605136773138/740115817924132884)
+- Current mapbox-gl-native breaks down when trying to pitch camera below 60 degrees. Also causes maptile requests runaway. Could fix with LODs. Need to investigate other implementations fixes (JS and iOS). This is mainly useful if nav would do AR projections over camera frames.  (related discord link: https://discordapp.com/channels/469524606043160576/534138605136773138/740115817924132884)
 [![pitch-issue](pitch-issue.jpg)](https://imgur.com/7M3PaNS)
 **(link on the image for video)**
 
@@ -40,7 +40,8 @@ https://github.com/marschr/comma2k19
 #### Todo: 
 - Implement overpass + OSM data local server.
 - Query data from overpass + OSM.
-- Prototype frontend with nav/routing controls on QT.
+- [work in progress] Prototype frontend with nav/routing controls on QT
+![Alt](wip-frontend.png "wip-frontend")
 - Check Valhalla stuff:
 https://github.com/valhalla/valhalla
 https://wiki.openstreetmap.org/wiki/Valhalla
