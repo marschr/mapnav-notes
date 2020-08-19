@@ -3,7 +3,7 @@
 
 #### Rendering:
 - Adreno 530 driver on current EON/C2 Android version doesn't seem to support "EXT_external_objects_fd" OpenGL/Vulkan extensions used for IPC GL texture. Could fallback to some shared DMA/ION/SVM like vision does? (maybe benchmark both solutions to check if there are real perf gains) Or even draw directly from UI module? (related discord link: https://discordapp.com/channels/469524606043160576/534138605136773138/730596253720641556)
-(OP3 vulkan driver info https://vulkan.gpuinfo.org/displayreport.php?id=3603#extensions)
+(OnePlus3 vulkan driver info https://vulkan.gpuinfo.org/displayreport.php?id=3603#extensions)
 [![mapnav-ipc](mapnav-ipc.jpg)](https://imgur.com/gallery/8pfHO5X)
 **(link on the image for video)**
 
@@ -33,7 +33,7 @@
 
 #### Nav:
 - Could use overpass to query OSM ways/segments nodes and extract lane info
-https://github.com/marschr/comma2k19
+https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
 ![Alt](mapbox_osm_overpass.png "openstreetmap nodes plotted onto mapboxgl plugin")
 
 - As for routing, OSM does provide the number of lanes for a given path/way segment and some turn lane restrictions. Mapbox does provide turn lane restrictions and routing APIs. Will openpilot need multi-lane info to navigate on crowded highways (to feed the model/cereal desire inputs) or just "keep right/left" would be enough? Also, C2 GPS positioning with KF seems good enough to localize ego position within lanes.
