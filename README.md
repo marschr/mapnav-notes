@@ -47,6 +47,8 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
         - http://overpass-api.de/full_installation.html
         - https://github.com/drolbr/Overpass-API
         - https://wiki.openstreetmap.org/wiki/Overpass_turbo
+        - https://switch2osm.org/serving-tiles/manually-building-a-tile-server-16-04-2-lts/
+        - https://gist.github.com/amolkhanorkar/8706915
 - **[work in progress]** Prototype frontend with nav/routing controls on QT
     - ![Alt](wip-frontend.png "wip-frontend")
     - [work in progress] PyQt5 offroad port for faster styling and prototyping (port back to C++ for production)
