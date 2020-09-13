@@ -51,12 +51,12 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
         - https://gist.github.com/amolkhanorkar/8706915
 - **[work in progress]** Prototype frontend with nav/routing controls on QT
     - ![Alt](wip-frontend.png "wip-frontend")
-    - [work in progress] PyQt5 offroad port for faster styling and prototyping (port back to C++ for production)
+    - [done] PyQt5 offroad port for faster styling and prototyping (port back to C++ for production)
     ![Alt](pyqt-ui-protoyping.png "wip-pyqt-ui-prototyping")
     
 - Cleanup local codebase and openpilot fork and push to github.
 - Hack comma connect to send routes to openpilot (should use athena?)
-- Check/implement Valhalla stuff:
+- [work in progress]Check/implement Valhalla stuff:
     - https://github.com/valhalla/valhalla
     - https://wiki.openstreetmap.org/wiki/Valhalla
 
