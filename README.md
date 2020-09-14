@@ -39,7 +39,7 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
 - As for routing, OSM does provide the number of lanes for a given path/way segment and some turn lane restrictions. Mapbox does provide turn lane restrictions and routing APIs. Will openpilot need multi-lane info to navigate on crowded highways (to feed the model/cereal desire inputs) or just "keep right/left" would be enough? Also, C2 GPS positioning with KF seems good enough to localize ego position within lanes.
 
 #### Todo: 
-- **[work in progress]** Implement overpass + OSM data local server:
+- [paused] Implement overpass + OSM data local server:
     - Links
         - https://wiki.openstreetmap.org/wiki/Setting_up_a_local_copy_of_the_OpenStreetMap_database,_kept_up_to_date_with_minutely_diffs
         - http://overpass-api.de/
@@ -49,13 +49,13 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
         - https://wiki.openstreetmap.org/wiki/Overpass_turbo
         - https://switch2osm.org/serving-tiles/manually-building-a-tile-server-16-04-2-lts/
         - https://gist.github.com/amolkhanorkar/8706915
-- **[work in progress]** Prototype frontend with nav/routing controls on QT
-    - ![Alt](wip-frontend.png "wip-frontend")
-    - [done] PyQt5 offroad port for faster styling and prototyping (port back to C++ for production)
+- [work in progress] Prototype frontend with nav/routing controls on QT
+![Alt](wip-frontend.png "wip-frontend")
+- [done] PyQt5 offroad port for faster styling and prototyping (port back to C++ for production)
     ![Alt](pyqt-ui-protoyping.png "wip-pyqt-ui-prototyping")
     
 - Cleanup local codebase and openpilot fork and push to github.
-- Hack comma connect to send routes to openpilot (should use athena?)
+- [work in progress]Hack comma connect to send routes to openpilot (should use athena?)
 - [work in progress]Check/implement Valhalla stuff:
     - https://github.com/valhalla/valhalla
     - https://wiki.openstreetmap.org/wiki/Valhalla
