@@ -55,7 +55,9 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
     ![Alt](pyqt-ui-protoyping.png "wip-pyqt-ui-prototyping")
     
 - Cleanup local codebase and openpilot fork and push to github.
-- [work in progress]Hack comma connect to send routes to openpilot (should use athena?)
+- [work in progress]Hack comma connect to send routes to openpilot
+    - Lots of old/deprecated dependencies on the react-native side of things, hard to get stable builds. Should update? Dockerize with old build tools? Bit of both for future CI?
+    - should use athena?
 - [work in progress]Check/implement Valhalla stuff:
     - https://github.com/valhalla/valhalla
     - https://wiki.openstreetmap.org/wiki/Valhalla
