@@ -57,7 +57,10 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
 - Cleanup local codebase and openpilot fork and push to github.
 - [work in progress]Hack comma connect to send routes to openpilot
     - Lots of old/deprecated dependencies on the react-native side of things, hard to get stable builds. Should update? Dockerize with old build tools? Bit of both for future CI?
+    - offroad apks seems to use Android dev tools v23 and v27 (but hey, qt5)
+    - [work in progress] mock paired comma device/car in connect app (better android emulator integration when developing)
     - should use athena?
+    - Naming things is hard... navigation? app screens navigation? directions? driving directions?
 - [work in progress]Check/implement Valhalla stuff:
     - https://github.com/valhalla/valhalla
     - https://wiki.openstreetmap.org/wiki/Valhalla
