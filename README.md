@@ -49,7 +49,7 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
         - https://wiki.openstreetmap.org/wiki/Overpass_turbo
         - https://switch2osm.org/serving-tiles/manually-building-a-tile-server-16-04-2-lts/
         - https://gist.github.com/amolkhanorkar/8706915
-- [work in progress] Prototype frontend with nav/routing controls on QT
+- [paused] Prototype frontend with nav/routing controls on QT
 ![Alt](wip-frontend.png "wip-frontend")
 - [done] PyQt5 offroad port for faster styling and prototyping (port back to C++ for production)
     ![Alt](pyqt-ui-protoyping.png "wip-pyqt-ui-prototyping")
@@ -58,11 +58,12 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
 - [work in progress]Hack comma connect to send routes to openpilot
     - Lots of old/deprecated dependencies on the react-native side of things, hard to get stable builds. Should update? Dockerize with old build tools? Bit of both for future CI?
     - offroad apks seems to use Android dev tools v23 and v27 (but hey, qt5)
-    - Hardcoded mocked paired comma device/car in connect app works. Gives better android emulator and react native tooling integration when developing. Also, hot realoading app changes now works. (still would need proper device mocking for CI).
+    - [done] Hardcoded mocked paired comma device/car in connect app works. Gives better android emulator and react native tooling integration when developing. Also, hot realoading app changes now works. (still would need proper device mocking for CI).
     - [work in progress] Add address search fields and make it query valhalla.
     - should use athena?
     - Naming things is hard... navigation? app screens navigation? directions? driving directions?
 - [work in progress]Check/implement Valhalla stuff:
+    - [work in progress] Setup OSM data + Valhalla service (docker probl'y)
     - https://github.com/valhalla/valhalla
     - https://wiki.openstreetmap.org/wiki/Valhalla
 
