@@ -64,8 +64,14 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
     - Naming things is hard... navigation? app screens navigation? directions? driving directions?
 - [work in progress]Check/implement Valhalla stuff:
     - [work in progress] Setup OSM data + Valhalla service (docker probl'y)
+    - Which valhalla modules one would minimally need to run it on the device for querying local storage cached map data? Which modules would need to run (and potentially scalling) the server side.
+    - What's a good map query and sync architecture/abstraction for both react-native app + QT5.
+    - What would take to initially mimic the waze experience? And what can easily be better?
     - https://github.com/valhalla/valhalla
     - https://wiki.openstreetmap.org/wiki/Valhalla
+    - https://github.com/valhalla/docker
+    - https://www.interline.io/valhalla/
+    - https://github.com/valhalla/valhalla/blob/master/docs/api/turn-by-turn/api-reference.md
 
 
 ##### Other links/stuff:
@@ -73,3 +79,5 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
 - https://github.com/mapzen/
 - https://www.interline.io/osm/extracts/
 - https://doc.qt.io/qt-5/location-plugin-mapboxgl.html
+- http://gtfs.org/
+- http://gtfs.org/reference/realtime/v2/
