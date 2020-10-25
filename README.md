@@ -66,12 +66,18 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
     - [work in progress] Setup OSM data + Valhalla service (docker probl'y)
     - Which valhalla modules one would minimally need to run it on the device for querying local storage cached map data? Which modules would need to run (and potentially scalling) the server side.
     - What's a good map query and sync architecture/abstraction for both react-native app + QT5.
-    - What would take to initially mimic the waze experience? And what can easily be better?
+    - What would take to initially mimic the waze experience? And what could easily be better?
     - https://github.com/valhalla/valhalla
     - https://wiki.openstreetmap.org/wiki/Valhalla
     - https://github.com/valhalla/docker
     - https://www.interline.io/valhalla/
     - https://github.com/valhalla/valhalla/blob/master/docs/api/turn-by-turn/api-reference.md
+    - Nice Valhalla overview: https://www.youtube.com/watch?v=jYRimQ3LwOw
+    - THIS!! The diagram and the whole page gives a great overview of the pipeline: https://github.com/valhalla/valhalla/blob/master/docs/route_overview.md
+    - Response format:
+        - http://project-osrm.org/docs/v5.5.1/api/#introduction
+        - https://github.com/Project-OSRM/osrm-backend
+        - https://github.com/valhalla/valhalla-docs/blob/master/turn-by-turn/api-reference.md#outputs-of-a-route
 
 
 ##### Other links/stuff:
@@ -81,3 +87,4 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
 - https://doc.qt.io/qt-5/location-plugin-mapboxgl.html
 - http://gtfs.org/
 - http://gtfs.org/reference/realtime/v2/
+- Maybe alternative renderer using OGLES https://github.com/tangrams/tangram-es
