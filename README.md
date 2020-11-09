@@ -57,7 +57,7 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
 - Cleanup local codebase and openpilot fork and push to github.
 - [work in progress]Hack comma connect to send routes to openpilot
     - Lots of old/deprecated dependencies on the react-native side of things, hard to get stable builds. Should update? Dockerize with old build tools? Bit of both for future CI?
-    [![mapnav-connect](mapnav-connect.png)](https://imgur.com/vpzo6O7)
+    [![mapnav-connect](mapnav-connect.png)](https://imgur.com/VJMmayc)
     *(link on the image for video)*
     
     - offroad apks seems to use Android dev tools v23 and v27 (but hey, qt5)
