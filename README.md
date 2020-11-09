@@ -5,11 +5,11 @@
 - Adreno 530 driver on current EON/C2 Android version doesn't seem to support "EXT_external_objects_fd" OpenGL/Vulkan extensions used for IPC GL texture. Could fallback to some shared DMA/ION/SVM like vision does? (maybe benchmark both solutions to check if there are real perf gains) Or even draw directly from UI module? (related discord link: https://discordapp.com/channels/469524606043160576/534138605136773138/730596253720641556)
 (OnePlus3 vulkan driver info https://vulkan.gpuinfo.org/displayreport.php?id=3603#extensions)
 [![mapnav-ipc](mapnav-ipc.jpg)](https://imgur.com/gallery/8pfHO5X)
-**(link on the image for video)**
+*(link on the image for video)*
 
 - Current mapbox-gl-native breaks down when trying to pitch camera below 60 degrees. Also causes maptile requests runaway. Could fix with LODs. Need to investigate other implementations fixes (JS and iOS). This is mainly useful if nav would do AR projections over camera frames.  (related discord link: https://discordapp.com/channels/469524606043160576/534138605136773138/740115817924132884)
 [![pitch-issue](pitch-issue.jpg)](https://imgur.com/7M3PaNS)
-**(link on the image for video)**
+*(link on the image for video)*
 
 - Current mapbox implementations doesn't seem to support multi-lane rendering, if needed for map visualization then need to implement support for it.
 
@@ -57,6 +57,9 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
 - Cleanup local codebase and openpilot fork and push to github.
 - [work in progress]Hack comma connect to send routes to openpilot
     - Lots of old/deprecated dependencies on the react-native side of things, hard to get stable builds. Should update? Dockerize with old build tools? Bit of both for future CI?
+    [![mapnav-connect](mapnav-connect.png)](https://imgur.com/vpzo6O7)
+    *(link on the image for video)*
+    
     - offroad apks seems to use Android dev tools v23 and v27 (but hey, qt5)
     - [done] Hardcoded mocked paired comma device/car in connect app works. Gives better android emulator and react native tooling integration when developing. Also, hot realoading app changes now works. (still would need proper device mocking for CI).
     - [work in progress] Add address search fields and make it query valhalla.
@@ -78,6 +81,10 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
         - http://project-osrm.org/docs/v5.5.1/api/#introduction
         - https://github.com/Project-OSRM/osrm-backend
         - https://github.com/valhalla/valhalla-docs/blob/master/turn-by-turn/api-reference.md#outputs-of-a-route
+    - Geocoding: 
+        - https://github.com/mapbox/carmen/blob/master/docs/how-carmen-works.md
+        - https://github.com/komoot/photon (meh, java)
+        - https://github.com/pelias/api
 
 
 ##### Other links/stuff:
