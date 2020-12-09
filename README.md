@@ -7,7 +7,7 @@
 [![mapnav-ipc](mapnav-ipc.jpg)](https://imgur.com/gallery/8pfHO5X)
 *(link on the image for video)*
 
-- Current mapbox-gl-native breaks down when trying to pitch camera below 60 degrees. Also causes maptile requests runaway. Could fix with LODs. Need to investigate other implementations fixes (JS and iOS). This is mainly useful if nav would do AR projections over camera frames.  (related discord link: https://discordapp.com/channels/469524606043160576/534138605136773138/740115817924132884)
+- Current mapbox-gl-native breaks down when trying to pitch camera below 60 degrees ([mapbox-gl-js now has sorta fixed this on version 2.0.0](https://github.com/mapbox/mapbox-gl-js/blob/main/CHANGELOG.md#-features-and-improvements), max pitch is now 85degrees, still would require pitch>90deg for AR overlays). Also causes maptile requests runaway. Could fix with LODs. Need to investigate other implementations fixes (JS and iOS). This is mainly useful if nav would do AR projections over camera frames.  (related discord link: https://discordapp.com/channels/469524606043160576/534138605136773138/740115817924132884)
 [![pitch-issue](pitch-issue.jpg)](https://imgur.com/7M3PaNS)
 *(link on the image for video)*
 
