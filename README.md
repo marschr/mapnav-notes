@@ -87,6 +87,11 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
         - https://github.com/komoot/photon (meh, java)
         - https://github.com/pelias/api
 
+#### Mapping stuff:
+- Mapbox vector tiles protobuf spec definitions: https://github.com/mapbox/vector-tile-spec/blob/master/2.1/vector_tile.proto
+- https://openlayers.org/en/latest/examples/osm-vector-tiles.html
+- https://github.com/geovation/tiler
+
 
 ##### Other links/stuff:
 - https://www.mapzen.com/
