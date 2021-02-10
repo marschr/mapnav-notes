@@ -102,3 +102,4 @@ https://github.com/marschr/comma2k19 (check notebooks/plot_on_map.ipynb )
 - http://gtfs.org/
 - http://gtfs.org/reference/realtime/v2/
 - Maybe alternative renderer using OGLES https://github.com/tangrams/tangram-es
+- Cool lyft study on OSM data accuracy: https://eng.lyft.com/how-lyft-discovered-openstreetmap-is-the-freshest-map-for-rideshare-a7a41bf92ec ( http://bit.ly/lyftosmqualitystudy )
